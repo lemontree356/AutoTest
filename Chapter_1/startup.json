@@ -1,0 +1,43 @@
+[
+  {
+    "description":"第一个mock例子",
+    "request":{
+      "method":"get",
+      "uri":"/demo"
+    },
+    "response":{
+      "text":"第一个moco框架demo"
+    }
+  },
+  {
+    "description":"get请求例子",
+    "request":{
+      "method":"get",
+      "uri":"/getDemo",
+      "queries":{
+        "name":"joy",
+        "sex":"F"
+      }
+    },
+    "response":{
+      "text":"joy-female --> get请求"
+    }
+  },
+  {
+    "description":"post请求例子",
+    "request":{
+      "uri":"/postDemo",
+      "method":"post",
+      "forms":{
+        "name":"Helen",
+        "age":"18"
+      }
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html; charset=gbk"
+      },
+      "text":"Helen-18 --> post请求"
+    }
+  }
+]

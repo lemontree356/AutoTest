@@ -100,23 +100,50 @@ public class ExtentTestNGIReporterListener implements IReporter {
         extent.flush();
     }
 
+//    private void init() {
+//        //文件夹不存在的话进行创建
+//        File reportDir= new File(OUTPUT_FOLDER);
+//        if(!reportDir.exists()&& !reportDir .isDirectory()){
+//            reportDir.mkdir();
+//        }
+//        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
+//        // 设置静态文件的DNS
+//        // 怎么样解决cdn.rawgit.com访问不了的情况
+//        htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
+//
+//        htmlReporter.config().setDocumentTitle("api自动化测试报告");
+//        htmlReporter.config().setReportName("api自动化测试报告");
+//        htmlReporter.config().setChartVisibilityOnOpen(true);
+//        htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
+//        htmlReporter.config().setTheme(Theme.STANDARD);
+//        htmlReporter.config().setCSS(".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}");
+//        extent = new ExtentReports();
+//        extent.attachReporter(htmlReporter);
+//        extent.setReportUsesManualConfiguration(true);
+//    }
+
     private void init() {
-        //文件夹不存在的话进行创建
-        File reportDir= new File(OUTPUT_FOLDER);
-        if(!reportDir.exists()&& !reportDir .isDirectory()){
+        // TODO Auto-generated method stub
+        File reportDir = new File(OUTPUT_FOLDER);
+        // 文件夹不存在的话进行创建
+        if (!reportDir.exists() && !reportDir.isDirectory()) {
             reportDir.mkdir();
         }
-        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
-        // 设置静态文件的DNS
-        // 怎么样解决cdn.rawgit.com访问不了的情况
-        htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
 
-        htmlReporter.config().setDocumentTitle("api自动化测试报告");
-        htmlReporter.config().setReportName("api自动化测试报告");
+        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
+        htmlReporter.config().setDocumentTitle(new ReportUtil().getReportName());
+        htmlReporter.config().setReportName(new ReportUtil().getReportName());
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
         htmlReporter.config().setTheme(Theme.STANDARD);
-        htmlReporter.config().setCSS(".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}");
+        // 设置系统信息样式：.card-panel.environment th:first-child{ width:30%;}
+        htmlReporter.config().setCSS(
+                ".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}  .card-panel.environment  th:first-child{ width:30%;}");
+        // 移除按键监听事件
+//        htmlReporter.config().setJS("$(window).off(\"keydown\");");
+        // 设置静态文件的DNS
+        // 如果cdn.rawgit.com访问不了，可以设置为：ResourceCDN.EXTENTREPORTS或者ResourceCDN.GITHUB
+        htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         extent.setReportUsesManualConfiguration(true);
