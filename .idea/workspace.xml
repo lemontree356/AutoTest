@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1522ec6-3454-44ae-9531-45fb84d2fc1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter/Chapter01/src/main/java/com/test/extent/demo/ReportUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter_1/chrTest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter_1/moco-runner-0.11.0-standalone.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter_1/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter_1/startup.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/Chapter01/src/main/java/com/test/extent/demo/ExtentTestNGIReporterListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/Chapter01/src/main/java/com/test/extent/demo/ExtentTestNGIReporterListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/Chapter01/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/Chapter01/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Chapter/target/" />
     <ignored path="$PROJECT_DIR$/Chapter/Chapter01/target/" />
@@ -33,7 +27,7 @@
           <entry key="CLASS" value="1" />
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="8" />
-          <entry key="JSON" value="7" />
+          <entry key="JSON" value="8" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="12" />
         </counts>
@@ -49,17 +43,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter_1/chrTest.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -155,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587566862255" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587567433440" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -282,7 +266,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587531890935</updated>
       <workItem from="1587531894118" duration="8460000" />
-      <workItem from="1587550470704" duration="8222000" />
+      <workItem from="1587550470704" duration="8908000" />
     </task>
     <task id="LOCAL-00001" summary="testng&#10;extentreport">
       <created>1587535301392</created>
@@ -334,11 +318,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16682000" />
+    <option name="totallyTimeSpent" value="17368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1621984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -356,7 +339,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.27903682" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.796034" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -469,7 +452,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter_1/chrTest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
+        <state relative-caret-position="144">
           <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
         </state>
       </provider>
